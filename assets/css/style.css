@@ -276,9 +276,25 @@ a { color: var(--blue-dark); text-decoration: none; }
 .btn-dark { background: var(--ink); color: #fff; }
 .btn-dark:hover { background: var(--blue-dark); transform: translateY(-2px); }
 
-/* ---------- Druckluftleitung (Separator) ---------- */
-.pipe-sep { padding: 6px 0 34px; overflow: hidden; }
-.pipe-sep svg { display: block; width: 100%; height: auto; max-height: 96px; }
+/* ---------- Druckluftleitung (Separator, vollbreit auf der Sektionsgrenze) ---------- */
+.pipe-sep {
+  position: relative;
+  height: 0;
+  z-index: 5;
+}
+.pipe-sep svg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -63%);
+  width: 100vw;
+  height: auto;
+  display: block;
+}
+.pd { animation: pipe-dot 10s linear infinite; }
+@keyframes pipe-dot {
+  from { transform: translateX(-40px); }
+  to { transform: translateX(1250px); }
+}
 .pipe-flow { animation: pipe-flow 1.5s linear infinite; }
 @keyframes pipe-flow {
   from { stroke-dashoffset: 0; }
@@ -294,10 +310,8 @@ a { color: var(--blue-dark); text-decoration: none; }
   50% { transform: rotate(26deg); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .pipe-flow, .gauge-needle { animation: none; }
-}
-@media (max-width: 720px) {
-  .pipe-sep { padding: 0 0 26px; }
+  .pipe-flow, .gauge-needle, .pd { animation: none; }
+  .pd { display: none; }
 }
 
 /* ---------- Sections ---------- */
