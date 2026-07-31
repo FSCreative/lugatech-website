@@ -309,6 +309,39 @@ a { color: var(--blue-dark); text-decoration: none; }
   .pd { display: none; }
 }
 
+/* ---------- Fotos ---------- */
+.photo-card {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+.photo-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo-card.wide img { aspect-ratio: 21 / 9; }
+.photo-card.ratio32 img { aspect-ratio: 3 / 2; }
+.photo-tag {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
+  border-radius: 999px;
+  padding: 7px 16px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--blue-ink);
+  box-shadow: var(--shadow);
+}
+@media (max-width: 720px) {
+  .photo-card.wide img { aspect-ratio: 16 / 10; }
+}
+
 /* ---------- Sections ---------- */
 .section { padding: 84px 0; }
 .section.soft { background: var(--bg-soft); }
