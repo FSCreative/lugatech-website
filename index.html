@@ -6,7 +6,7 @@
   <title>LuGa-Tech – Gas- und Drucklufttechnik | Koblach & Eschen</title>
   <meta name="description" content="LuGa-Tech ist Ihr kompetenter Partner für Gas- und Drucklufttechnik: Kompressoren, Druckluftzubehör und 24h-Service – von Vorarlberg über Liechtenstein bis Süddeutschland.">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
-  <link rel="stylesheet" href="assets/css/style.css?v=3">
+  <link rel="stylesheet" href="assets/css/style.css?v=4">
 </head>
 <body>
 
@@ -80,9 +80,8 @@
     </div>
   </section>
 
-  <!-- Druckluftleitung als Trenner -->
+  <!-- Druckluftleitung als Trenner (vollbreit, exakt auf der Sektionsgrenze) -->
   <div class="pipe-sep" aria-hidden="true">
-    <div class="container">
       <svg viewBox="0 0 1200 100" preserveAspectRatio="xMidYMid meet" role="presentation">
         <defs>
           <linearGradient id="pipeBody" x1="0" y1="0" x2="0" y2="1">
@@ -113,8 +112,18 @@
         <circle cx="600" cy="24" r="2.5" fill="#1e2a32"/>
         <!-- Luftstrom im Rohr -->
         <path class="pipe-flow" d="M0 63 H1200" fill="none" stroke="#2fb4e9" stroke-width="7" stroke-linecap="round" stroke-dasharray="20 28" opacity="0.65"/>
+        <!-- Durchfliegende Pünktchen wie im Header -->
+        <g class="pipe-dots">
+          <circle class="pd" cy="18" r="4" fill="#2fb4e9" opacity="0.22" style="animation-duration:11s;animation-delay:0s"/>
+          <circle class="pd" cy="34" r="2.5" fill="#2fb4e9" opacity="0.3" style="animation-duration:8s;animation-delay:-2.5s"/>
+          <circle class="pd" cy="8" r="3" fill="#2fb4e9" opacity="0.18" style="animation-duration:14s;animation-delay:-6s"/>
+          <circle class="pd" cy="90" r="3.5" fill="#2fb4e9" opacity="0.25" style="animation-duration:9.5s;animation-delay:-1s"/>
+          <circle class="pd" cy="82" r="2" fill="#2fb4e9" opacity="0.32" style="animation-duration:7s;animation-delay:-4s"/>
+          <circle class="pd" cy="26" r="5" fill="#2fb4e9" opacity="0.14" style="animation-duration:16s;animation-delay:-9s"/>
+          <circle class="pd" cy="94" r="2.5" fill="#2fb4e9" opacity="0.2" style="animation-duration:12s;animation-delay:-7s"/>
+          <circle class="pd" cy="40" r="2" fill="#2fb4e9" opacity="0.28" style="animation-duration:10s;animation-delay:-5s"/>
+        </g>
       </svg>
-    </div>
   </div>
 
   <!-- Leistungsübersicht -->
