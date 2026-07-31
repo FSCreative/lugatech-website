@@ -26,3 +26,7 @@ Das Repo kann direkt auf Railway deployt werden:
 1. Neues Projekt → „Deploy from GitHub repo"
 2. Region: **EU West (Amsterdam)**
 3. Railway erkennt Node.js automatisch und startet `npm start` (Port via `$PORT`)
+
+<!-- Deploy-Trigger: v3 -->
+
+_Stand: Juli 2026 – v3_
