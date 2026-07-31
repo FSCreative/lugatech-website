@@ -497,6 +497,24 @@ a.card { display: block; color: inherit; }
 .acc-panel-inner ul { margin: 10px 0 0 18px; }
 .acc-panel-inner li { margin-bottom: 6px; }
 
+/* ---------- Zweispaltiges Layout (Akkordeon + Seitenspalte) ---------- */
+.split-14 {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 26px;
+  align-items: start;
+}
+.service-aside {
+  display: grid;
+  gap: 22px;
+  position: sticky;
+  top: 96px;
+}
+@media (max-width: 960px) {
+  .split-14 { grid-template-columns: 1fr; }
+  .service-aside { position: static; }
+}
+
 /* ---------- Brand strip ---------- */
 .brands {
   display: flex;
