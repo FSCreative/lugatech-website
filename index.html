@@ -6,7 +6,7 @@
   <title>LuGa-Tech – Gas- und Drucklufttechnik | Koblach & Eschen</title>
   <meta name="description" content="LuGa-Tech ist Ihr kompetenter Partner für Gas- und Drucklufttechnik: Kompressoren, Druckluftzubehör und 24h-Service – von Vorarlberg über Liechtenstein bis Süddeutschland.">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
-  <link rel="stylesheet" href="assets/css/style.css?v=4">
+  <link rel="stylesheet" href="assets/css/style.css?v=5">
 </head>
 <body>
 
@@ -82,7 +82,7 @@
 
   <!-- Druckluftleitung als Trenner (vollbreit, exakt auf der Sektionsgrenze) -->
   <div class="pipe-sep" aria-hidden="true">
-      <svg viewBox="0 0 1200 100" preserveAspectRatio="xMidYMid meet" role="presentation">
+      <svg viewBox="0 0 1200 56" preserveAspectRatio="xMidYMid meet" role="presentation">
         <defs>
           <linearGradient id="pipeBody" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0" stop-color="#eef2f5"/>
@@ -90,38 +90,33 @@
             <stop offset="1" stop-color="#c9d2d8"/>
           </linearGradient>
         </defs>
-        <!-- Rohr -->
-        <rect x="0" y="52" width="1200" height="22" rx="11" fill="url(#pipeBody)" stroke="#c3cdd4" stroke-width="1.5"/>
-        <rect x="8" y="56" width="1184" height="4" rx="2" fill="#ffffff" opacity="0.6"/>
+        <!-- Rohr (schlank) -->
+        <rect x="0" y="28" width="1200" height="12" rx="6" fill="url(#pipeBody)" stroke="#c3cdd4" stroke-width="1"/>
+        <rect x="6" y="30" width="1188" height="2.5" rx="1.25" fill="#ffffff" opacity="0.6"/>
         <!-- Flansche -->
-        <rect x="150" y="46" width="16" height="34" rx="4" fill="#cfd7dd" stroke="#b7c2ca" stroke-width="1.5"/>
-        <rect x="392" y="46" width="16" height="34" rx="4" fill="#cfd7dd" stroke="#b7c2ca" stroke-width="1.5"/>
-        <rect x="792" y="46" width="16" height="34" rx="4" fill="#cfd7dd" stroke="#b7c2ca" stroke-width="1.5"/>
-        <rect x="1034" y="46" width="16" height="34" rx="4" fill="#cfd7dd" stroke="#b7c2ca" stroke-width="1.5"/>
-        <!-- Manometer in der Mitte -->
-        <rect x="594" y="34" width="12" height="20" rx="3" fill="#cfd7dd" stroke="#b7c2ca" stroke-width="1.5"/>
-        <circle cx="600" cy="24" r="17" fill="#ffffff" stroke="#1794c9" stroke-width="2.5"/>
-        <line x1="600" y1="10.5" x2="600" y2="14.5" stroke="#5b6b76" stroke-width="1.5" stroke-linecap="round"/>
-        <line x1="588" y1="17" x2="591.4" y2="19" stroke="#5b6b76" stroke-width="1.5" stroke-linecap="round"/>
-        <line x1="612" y1="17" x2="608.6" y2="19" stroke="#5b6b76" stroke-width="1.5" stroke-linecap="round"/>
-        <line x1="586.5" y1="24" x2="590.5" y2="24" stroke="#5b6b76" stroke-width="1.5" stroke-linecap="round"/>
-        <line x1="613.5" y1="24" x2="609.5" y2="24" stroke="#5b6b76" stroke-width="1.5" stroke-linecap="round"/>
+        <rect x="150" y="24" width="10" height="20" rx="3" fill="#cfd7dd" stroke="#b7c2ca" stroke-width="1"/>
+        <rect x="392" y="24" width="10" height="20" rx="3" fill="#cfd7dd" stroke="#b7c2ca" stroke-width="1"/>
+        <rect x="792" y="24" width="10" height="20" rx="3" fill="#cfd7dd" stroke="#b7c2ca" stroke-width="1"/>
+        <rect x="1034" y="24" width="10" height="20" rx="3" fill="#cfd7dd" stroke="#b7c2ca" stroke-width="1"/>
+        <!-- Manometer in der Mitte (klein) -->
+        <rect x="596" y="17" width="8" height="12" rx="2" fill="#cfd7dd" stroke="#b7c2ca" stroke-width="1"/>
+        <circle cx="600" cy="11" r="10" fill="#ffffff" stroke="#1794c9" stroke-width="1.8"/>
+        <line x1="600" y1="3.5" x2="600" y2="5.8" stroke="#5b6b76" stroke-width="1" stroke-linecap="round"/>
+        <line x1="592.5" y1="7" x2="594.5" y2="8.2" stroke="#5b6b76" stroke-width="1" stroke-linecap="round"/>
+        <line x1="607.5" y1="7" x2="605.5" y2="8.2" stroke="#5b6b76" stroke-width="1" stroke-linecap="round"/>
         <g class="gauge-needle">
-          <line x1="600" y1="24" x2="600" y2="12.5" stroke="#2fb4e9" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="600" y1="11" x2="600" y2="4.5" stroke="#2fb4e9" stroke-width="1.8" stroke-linecap="round"/>
         </g>
-        <circle cx="600" cy="24" r="2.5" fill="#1e2a32"/>
-        <!-- Luftstrom im Rohr -->
-        <path class="pipe-flow" d="M0 63 H1200" fill="none" stroke="#2fb4e9" stroke-width="7" stroke-linecap="round" stroke-dasharray="20 28" opacity="0.65"/>
-        <!-- Durchfliegende Pünktchen wie im Header -->
+        <circle cx="600" cy="11" r="1.6" fill="#1e2a32"/>
+        <!-- Kügelchen strömen durchs Rohr -->
         <g class="pipe-dots">
-          <circle class="pd" cy="18" r="4" fill="#2fb4e9" opacity="0.22" style="animation-duration:11s;animation-delay:0s"/>
-          <circle class="pd" cy="34" r="2.5" fill="#2fb4e9" opacity="0.3" style="animation-duration:8s;animation-delay:-2.5s"/>
-          <circle class="pd" cy="8" r="3" fill="#2fb4e9" opacity="0.18" style="animation-duration:14s;animation-delay:-6s"/>
-          <circle class="pd" cy="90" r="3.5" fill="#2fb4e9" opacity="0.25" style="animation-duration:9.5s;animation-delay:-1s"/>
-          <circle class="pd" cy="82" r="2" fill="#2fb4e9" opacity="0.32" style="animation-duration:7s;animation-delay:-4s"/>
-          <circle class="pd" cy="26" r="5" fill="#2fb4e9" opacity="0.14" style="animation-duration:16s;animation-delay:-9s"/>
-          <circle class="pd" cy="94" r="2.5" fill="#2fb4e9" opacity="0.2" style="animation-duration:12s;animation-delay:-7s"/>
-          <circle class="pd" cy="40" r="2" fill="#2fb4e9" opacity="0.28" style="animation-duration:10s;animation-delay:-5s"/>
+          <circle class="pd" cy="34" r="3.4" fill="#2fb4e9" opacity="0.55" style="animation-duration:7s;animation-delay:0s"/>
+          <circle class="pd" cy="34" r="2.4" fill="#2fb4e9" opacity="0.45" style="animation-duration:9s;animation-delay:-3s"/>
+          <circle class="pd" cy="34" r="3" fill="#2fb4e9" opacity="0.6" style="animation-duration:6s;animation-delay:-1.5s"/>
+          <circle class="pd" cy="34" r="2" fill="#2fb4e9" opacity="0.4" style="animation-duration:11s;animation-delay:-6s"/>
+          <circle class="pd" cy="34" r="2.8" fill="#2fb4e9" opacity="0.5" style="animation-duration:8s;animation-delay:-4.5s"/>
+          <circle class="pd" cy="34" r="2.2" fill="#2fb4e9" opacity="0.45" style="animation-duration:10s;animation-delay:-8s"/>
+          <circle class="pd" cy="34" r="3.2" fill="#2fb4e9" opacity="0.55" style="animation-duration:7.5s;animation-delay:-5.5s"/>
         </g>
       </svg>
   </div>
