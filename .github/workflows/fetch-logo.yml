@@ -1,4 +1,4 @@
-name: Original-Logo von lugatech.at holen
+name: Bilder von lugatech.at holen
 on:
   workflow_dispatch:
 permissions:
@@ -8,16 +8,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Logo herunterladen
+      - name: Bilder herunterladen
         run: |
-          curl -fL -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" \
-            -o assets/img/logo-original.png \
-            https://www.lugatech.at/images/logo.png
-          file assets/img/logo-original.png
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+          curl -fL -A "$UA" -o assets/img/foto-kompressoren.jpg https://www.lugatech.at/images/header/itemid105.jpg
+          curl -fL -A "$UA" -o assets/img/foto-schraubenkompressor.jpg https://www.lugatech.at/images/header/itemid108.jpg
+          curl -fL -A "$UA" -o assets/img/foto-werkzeug.jpg https://www.lugatech.at/images/header/itemid106.jpg
+          curl -fL -A "$UA" -o assets/img/foto-telefon.jpg https://www.lugatech.at/images/header/itemid107.jpg
+          file assets/img/foto-*.jpg
       - name: Committen
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/img/logo-original.png
-          git commit -m "Original-Logo von lugatech.at hinzugefuegt"
+          git add assets/img/
+          git commit -m "Fotos von lugatech.at hinzugefuegt"
           git push
