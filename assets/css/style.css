@@ -285,24 +285,19 @@ a { color: var(--blue-dark); text-decoration: none; }
 .pipe-sep svg {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -63%);
+  transform: translate(-50%, -61%);
   width: 100vw;
   height: auto;
   display: block;
 }
 .pd { animation: pipe-dot 10s linear infinite; }
 @keyframes pipe-dot {
-  from { transform: translateX(-40px); }
-  to { transform: translateX(1250px); }
-}
-.pipe-flow { animation: pipe-flow 1.5s linear infinite; }
-@keyframes pipe-flow {
-  from { stroke-dashoffset: 0; }
-  to { stroke-dashoffset: -96; }
+  from { transform: translateX(-20px); }
+  to { transform: translateX(1230px); }
 }
 .gauge-needle {
   transform-box: view-box;
-  transform-origin: 600px 24px;
+  transform-origin: 600px 11px;
   animation: gauge-needle 3s ease-in-out infinite;
 }
 @keyframes gauge-needle {
@@ -310,7 +305,7 @@ a { color: var(--blue-dark); text-decoration: none; }
   50% { transform: rotate(26deg); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .pipe-flow, .gauge-needle, .pd { animation: none; }
+  .gauge-needle, .pd { animation: none; }
   .pd { display: none; }
 }
 
@@ -632,10 +627,8 @@ a.card { display: block; color: inherit; }
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
   .hero-grid { grid-template-columns: 1fr; gap: 0; }
-  .hero-grid .hero-inner { padding-bottom: 24px; }
-  .hero-visual { padding-bottom: 64px; }
-  .logo-card { padding: 30px 34px 26px; }
-  .logo-card img { width: 200px; }
+  .hero-grid .hero-inner { padding-bottom: 76px; }
+  .hero-visual { display: none; }
   .grid.cols-3, .grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .contact-grid { grid-template-columns: 1fr; }
