@@ -6,7 +6,7 @@
   <title>LuGa-Tech – Gas- und Drucklufttechnik | Koblach & Eschen</title>
   <meta name="description" content="LuGa-Tech ist Ihr kompetenter Partner für Gas- und Drucklufttechnik: Kompressoren, Druckluftzubehör und 24h-Service – von Vorarlberg über Liechtenstein bis Süddeutschland.">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
-  <link rel="stylesheet" href="assets/css/style.css?v=2">
+  <link rel="stylesheet" href="assets/css/style.css?v=3">
 </head>
 <body>
 
@@ -79,6 +79,43 @@
       </div>
     </div>
   </section>
+
+  <!-- Druckluftleitung als Trenner -->
+  <div class="pipe-sep" aria-hidden="true">
+    <div class="container">
+      <svg viewBox="0 0 1200 100" preserveAspectRatio="xMidYMid meet" role="presentation">
+        <defs>
+          <linearGradient id="pipeBody" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#eef2f5"/>
+            <stop offset="0.45" stop-color="#dfe6ea"/>
+            <stop offset="1" stop-color="#c9d2d8"/>
+          </linearGradient>
+        </defs>
+        <!-- Rohr -->
+        <rect x="0" y="52" width="1200" height="22" rx="11" fill="url(#pipeBody)" stroke="#c3cdd4" stroke-width="1.5"/>
+        <rect x="8" y="56" width="1184" height="4" rx="2" fill="#ffffff" opacity="0.6"/>
+        <!-- Flansche -->
+        <rect x="150" y="46" width="16" height="34" rx="4" fill="#cfd7dd" stroke="#b7c2ca" stroke-width="1.5"/>
+        <rect x="392" y="46" width="16" height="34" rx="4" fill="#cfd7dd" stroke="#b7c2ca" stroke-width="1.5"/>
+        <rect x="792" y="46" width="16" height="34" rx="4" fill="#cfd7dd" stroke="#b7c2ca" stroke-width="1.5"/>
+        <rect x="1034" y="46" width="16" height="34" rx="4" fill="#cfd7dd" stroke="#b7c2ca" stroke-width="1.5"/>
+        <!-- Manometer in der Mitte -->
+        <rect x="594" y="34" width="12" height="20" rx="3" fill="#cfd7dd" stroke="#b7c2ca" stroke-width="1.5"/>
+        <circle cx="600" cy="24" r="17" fill="#ffffff" stroke="#1794c9" stroke-width="2.5"/>
+        <line x1="600" y1="10.5" x2="600" y2="14.5" stroke="#5b6b76" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="588" y1="17" x2="591.4" y2="19" stroke="#5b6b76" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="612" y1="17" x2="608.6" y2="19" stroke="#5b6b76" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="586.5" y1="24" x2="590.5" y2="24" stroke="#5b6b76" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="613.5" y1="24" x2="609.5" y2="24" stroke="#5b6b76" stroke-width="1.5" stroke-linecap="round"/>
+        <g class="gauge-needle">
+          <line x1="600" y1="24" x2="600" y2="12.5" stroke="#2fb4e9" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <circle cx="600" cy="24" r="2.5" fill="#1e2a32"/>
+        <!-- Luftstrom im Rohr -->
+        <path class="pipe-flow" d="M0 63 H1200" fill="none" stroke="#2fb4e9" stroke-width="7" stroke-linecap="round" stroke-dasharray="20 28" opacity="0.65"/>
+      </svg>
+    </div>
+  </div>
 
   <!-- Leistungsübersicht -->
   <section class="section soft">
