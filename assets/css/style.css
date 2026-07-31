@@ -276,6 +276,30 @@ a { color: var(--blue-dark); text-decoration: none; }
 .btn-dark { background: var(--ink); color: #fff; }
 .btn-dark:hover { background: var(--blue-dark); transform: translateY(-2px); }
 
+/* ---------- Druckluftleitung (Separator) ---------- */
+.pipe-sep { padding: 6px 0 34px; overflow: hidden; }
+.pipe-sep svg { display: block; width: 100%; height: auto; max-height: 96px; }
+.pipe-flow { animation: pipe-flow 1.5s linear infinite; }
+@keyframes pipe-flow {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -96; }
+}
+.gauge-needle {
+  transform-box: view-box;
+  transform-origin: 600px 24px;
+  animation: gauge-needle 3s ease-in-out infinite;
+}
+@keyframes gauge-needle {
+  0%, 100% { transform: rotate(-32deg); }
+  50% { transform: rotate(26deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pipe-flow, .gauge-needle { animation: none; }
+}
+@media (max-width: 720px) {
+  .pipe-sep { padding: 0 0 26px; }
+}
+
 /* ---------- Sections ---------- */
 .section { padding: 84px 0; }
 .section.soft { background: var(--bg-soft); }
