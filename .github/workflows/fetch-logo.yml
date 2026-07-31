@@ -1,0 +1,23 @@
+name: Original-Logo von lugatech.at holen
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Logo herunterladen
+        run: |
+          curl -fL -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" \
+            -o assets/img/logo-original.png \
+            https://www.lugatech.at/images/logo.png
+          file assets/img/logo-original.png
+      - name: Committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/img/logo-original.png
+          git commit -m "Original-Logo von lugatech.at hinzugefuegt"
+          git push
