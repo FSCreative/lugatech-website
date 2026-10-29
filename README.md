@@ -30,3 +30,7 @@ Das Repo kann direkt auf Railway deployt werden:
 <!-- Deploy-Trigger: v3 -->
 
 _Stand: Juli 2026 – v3_
+
+## Hinweis zur Erstellung
+
+Bei der Erstellung dieser Website wurden teilweise KI-gestützte Werkzeuge eingesetzt. Alle Inhalte wurden redaktionell geprüft.
